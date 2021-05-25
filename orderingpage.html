@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WackDonalds</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="code.jquery.com/jquery-1.12.3.min.js"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="orderingpage.css">
+    </head>
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navv">
+            <a href="index.html"><div class="navbar-brand lefty">WackDonald's</div></a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active white" href="#topp">Specials <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active white" href="#specials">Breakfasts <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active white" href="#breakfasts">Group Meals <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active white" href="#alacartes">Ala Carte <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active white" href="developers.html">About <span class="sr-only">(current)</span></a>
+            </div>
+            </div>
+        </nav>
+        <h3 id="topp" style="font-size: 0px;">.</h3>
+        
+        <div class="container" id="container">
+            <br>	
+            <div id="cat1">
+                <h3 id="specials">Specials</h3>
+                <br>
+                <div class="row">
+                <div class="cat1Item col-md-4" id="Cat1Item1">
+                    <span class="itemName">K-Chicken Burger</span>
+                    <span class="price">160</span>
+                    <br>
+                    <button onclick="submitCat1Item1()" class="btn btnRed">Order</button>
+                </div>
+                <div class="cat1Item col-md-4" id="Cat1Item2">
+                    <span class="itemName">K-Beef Burger</span>
+                    <span class="price">160</span>
+                    <br>
+                    <button onclick="submitCat1Item2()" class="btn btnRed">Order</button>
+                </div>
+                <div class="cat1Item col-md-4" id="Cat1Item3">
+                    <span class="itemName">Ultimate Burger McShare</span>
+                    <span class="price">499</span>
+                    <br>
+                    <button onclick="submitCat1Item3()" class="btn btnRed">Order</button>
+                </div>
+                </div>
+                
+                <br>
+                <div class="row">
+                <div class="cat1Item col-md-4" id="Cat1Item4">
+                    <span class="itemName">Strawberry Banana Sunday</span>
+                    <span class="price">35</span>
+                    <br>
+                    <button onclick="submitCat1Item4()" class="btn btnRed">Order</button>
+                </div>
+                <div class="cat1Item col-md-4" id="Cat1Item5">
+                    <span class="itemName">K-Chicken Burger Meal</span>
+                    <span class="price">206</span>
+                    <br>
+                    <button onclick="submitCat1Item5()" class="btn btnRed">Order</button>
+                </div>
+                <div class="cat1Item col-md-4" id="Cat1Item6">
+                    <span class="itemName">K-Beef Burger Meal</span>
+                    <span class="price">206</span>
+                    <br>
+                    <button onclick="submitCat1Item6()" class="btn btnRed">Order</button>
+                </div>
+                </div>
+            </div>
+            
+            <br>
+            <div id="cat2">
+                <h3 id="breakfasts">Breakfast</h3>
+                <br>
+                <div class="row">
+                <div class="cat2Item col-md-4" id="Cat2Item1">
+                    <span class="itemName">Sausage &amp; Hash Browns Rice Bowl</span>
+                    <span class="price">154</span>
+                    <br>
+                    <span class="left">w/ Egg</span>
+                    <button onclick="submitCat2Item1()" class="btn btnRed">Order</button>
+                </div>
+                <div class="cat2Item col-md-4" id="Cat2Item2">
+                    <span class="itemName">Longganisa &amp; Hash Browns Rice Bowl</span>
+                    <span class="price">154</span>
+                    <br>
+                    <span class="left">w/ Egg</span>
+                    <button onclick="submitCat2Item2()" class="btn btnRed">Order</button>
+                </div>
+                <div class="cat2Item col-md-4" id="Cat2Item3">
+                    <span class="itemName">Hotcakes</span>
+                    <span class="price">73</span>
+                    <br>
+                    <span class="left">2 pc.</span>
+                    <button onclick="submitCat2Item3()" class="btn btnRed">Order</button>
+                </div>
+                </div>
+                
+                <br>
+                <div class="row">
+                <div class="cat2Item col-md-4" id="Cat2Item4">
+                    <span class="itemName">Cheesy Eggdesal</span>
+                    <span class="price">95</span>
+                    <br>
+                    <span class="left">w/ Hashbrown</span>
+                    <button onclick="submitCat2Item4()" class="btn btnRed">Order</button>
+                </div>
+                <div class="cat2Item col-md-4" id="Cat2Item5">
+                    <span class="itemName">Big Breakfast</span>
+                    <span class="price">157</span>
+                    <br>
+                    <button onclick="submitCat2Item5()" class="btn btnRed">Order</button>
+                </div>
+                <div class="cat2Item col-md-4" id="Cat2Item6">
+                    <span class="itemName">Egg McMuffin</span>
+                    <span class="price">135</span>
+                    <br>
+                    <span class="left">w/ Hashbrown</span>
+                    <button onclick="submitCat2Item6()" class="btn btnRed">Order</button>
+                </div>
+                </div>
+            </div>
+            
+            <br>
+            <div id="cat3">
+                <h3 id="groupmeals">Group Meals</h3>
+                <br>
+                <div class="row">
+                <div class="cat3Item col-md-4" id="Cat3Item1">
+                    <span class="itemName">20 pc. McNugget</span>
+                    <span class="price">370</span>
+                    <br>
+                    <span class="left">w/ FREE Lipton</span>
+                    <button onclick="submitCat3Item1()" class="btn btnRed">Order</button>
+                </div>
+                <div class="cat3Item col-md-4" id="Cat3Item2">
+                    <span class="itemName">6 pc. Chicken McShare</span>
+                    <span class="price">330</span>
+                    <br>
+                    <span class="left">w/ FREE Lipton</span>
+                    <button onclick="submitCat3Item2()" class="btn btnRed">Order</button>
+                </div>
+                <div class="cat3Item col-md-4" id="Cat3Item3">
+                    <span class="itemName">8 pc. Chicken McShare</span>
+                    <span class="price">440</span>
+                    <br>
+                    <span class="left">w/ FREE Lipton.</span>
+                    <button onclick="submitCat3Item3()" class="btn btnRed">Order</button>
+                </div>
+                </div>
+                
+                <br>
+                <div class="row">
+                <div class="cat3Item col-md-4" id="Cat3Item4">
+                    <span class="itemName">Snack Burger McShare</span>
+                    <span class="price">330</span>
+                    <br>
+                    <span class="left">w/ FREE Lipton</span>
+                    <button onclick="submitCat3Item4()" class="btn btnRed">Order</button>
+                </div>
+                <div class="cat3Item col-md-4" id="Cat3Item5">
+                    <span class="itemName">Ultimate Burger McShare</span>
+                    <span class="price">499</span>
+                    <br>
+                    <button onclick="submitCat3Item5()" class="btn btnRed">Order</button>
+                </div>
+                <div class="cat3Item col-md-4" id="Cat3Item6">
+                    <span class="itemName">BFF Fries 'N McFloat Combo</span>
+                    <span class="price">221</span>
+                    <br>
+                    <button onclick="submitCat3Item6()" class="btn btnRed">Order</button>
+                </div>
+                </div>
+            </div>
+            
+            <br>
+            <div id="cat4">
+                <h3 id="alacartes">Ala Carte</h3>
+                <br>
+                <div class="row">
+                <div class="cat4Item col-md-4" id="Cat4Item1">
+                    <span class="itemName">Chocolate Shake</span>
+                    <span class="price">94</span>
+                    <br>
+                    <button onclick="submitCat4Item1()" class="btn btnRed">Order</button>
+                </div>
+                <div class="cat4Item col-md-4" id="Cat4Item2">
+                    <span class="itemName">Strawberry Shake</span>
+                    <span class="price">94</span>
+                    <br>
+                    <button onclick="submitCat4Item2()" class="btn btnRed">Order</button>
+                </div>
+                <div class="cat4Item col-md-4" id="Cat4Item3">
+                    <span class="itemName">Fries</span>
+                    <span class="price">55</span>
+                    <br>
+                    <button onclick="submitCat4Item3()" class="btn btnRed">Order</button>
+                </div>
+                </div>
+                
+                <br>
+                <div class="row">
+                <div class="cat4Item col-md-4" id="Cat4Item4">
+                    <span class="itemName">BFF Fries</span>
+                    <span class="price">134</span>
+                    <br>
+                    <button onclick="submitCat4Item4()" class="btn btnRed">Order</button>
+                </div>
+                <div class="cat4Item col-md-4" id="Cat4Item5">
+                    <span class="itemName">Hashbrown</span>
+                    <span class="price">37</span>
+                    <br>
+                    <button onclick="submitCat4Item5()" class="btn btnRed">Order</button>
+                </div>
+                <div class="cat4Item col-md-4" id="Cat4Item6">
+                    <span class="itemName">McCrsipy Chicken Fillet</span>
+                    <span class="price">106</span>
+                    <br>
+                    <span class="left">w/ Rice and Egg</span>
+                    <button onclick="submitCat4Item6()" class="btn btnRed">Order</button>
+                </div>
+                </div>
+            </div>
+            
+            <br>
+            <div class="row">
+            <div class="col-md-7">
+            <form action="http://savantandsparktest.ml/checkout.php" method="post">
+            <div class="form-group">
+                <label for="cust_name"><strong>Name</strong></label>
+                <input id="cust_name" name ="cust_name" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="cust_addr"><strong>Address</strong></label>
+                <input id="cust_addr" name ="cust_addr" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="cust_email"><strong>Email</strong></label>
+                <input id="cust_email" name ="cust_email" type="email" class="form-control">
+            </div>
+            <div>
+                <button onclick="finalCheckOut()" class="btn btn-warning price">Next</button>
+            </div>
+            
+             <input type="hidden" id="hidden" name="cust_order">
+            
+            </form>
+            </div>
+            
+            <div class="col-md-5">
+                <h3 class="mb-3">Checkout</h3>
+                <div class="card">
+                    <ul id="checkout" class="list-group list-group-flush">
+                    
+                    </ul>
+                    <div class="card-footer" id="tot">
+                        <strong>Total</strong>: Php <span id="totaL">0.00</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+    </body>
+    
+    <script type='text/javascript' language='javascript' src="orderingpage.js"></script>
+    
+</html>
